@@ -262,7 +262,7 @@ form input:focus {
   .form-register .input-icon-profile,
   .form-login .input-icon-mail {
     width: 28px;
-    top: 185px;
+    top: 190px;
     left: 35px;
   }
 
@@ -333,14 +333,16 @@ form input:focus {
   }
 
   .button-account .facebook-account {
+    order: 2;
     width: 100px;
     height: 100px;
-    margin-right: 40px;
   }
 
   .button-account .google-account {
+    order: 1;
     width: 100px;
     height: 100px;
+    margin-right: 40px;
   }
 
   .button-account .facebook-account span {
