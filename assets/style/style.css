@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 1rem;
+  font-weight: 400;
   /* font-size: 1rem; */
 }
 
@@ -21,7 +22,7 @@ body {
 .form-register .text-register {
   margin-top: 51px;
   color: #8e6447;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.5rem;
 }
 
@@ -41,7 +42,6 @@ body {
 .form-register form input {
   margin-top: 13px;
   display: block;
-  background-color: #fcfdfe;
   box-sizing: border-box;
   border: 2px solid #dedede;
   border-radius: 8px;
@@ -50,7 +50,11 @@ body {
   padding: 13px 50px;
   letter-spacing: 0.75px;
   font-size: 0.9rem;
-  /* position: relative; */
+  outline: none;
+}
+
+.form-register form input:focus {
+  border: 2px solid #0b132a;
 }
 
 .form-register {
@@ -134,14 +138,12 @@ body {
 }
 
 .button-account {
-  display: flex;
-  justify-content: space-between;
   margin-top: 25px;
 }
 
 .button-account button {
   width: 315px;
-  padding: 15px 10px;
+  padding: 20px 10px;
   border: none;
   background-color: #fff;
   border-radius: 16px;
@@ -153,11 +155,12 @@ body {
 
 .button-account .facebook-account {
   position: relative;
+  margin-right: 14px;
 }
 
 .button-account .facebook-account .facebook-icon {
   position: absolute;
-  top: 12px;
+  top: 18px;
   left: 80px;
 }
 
@@ -167,13 +170,131 @@ body {
 
 .button-account .google-account .google-icon {
   position: absolute;
-  top: 12px;
+  top: 18px;
   left: 80px;
 }
 
 /* media 426px */
 @media screen and (max-width: 600px) {
+  .aside {
+    margin: 0;
+    padding: 80px 40px;
+  }
+
   .section img {
     display: none;
+  }
+
+  .aside .logo {
+    width: 300px;
+  }
+
+  .form-register .text-register {
+    margin-top: 15px;
+    color: #8e6447;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .form-register .text-light {
+    margin-top: 20px;
+    font-size: 1.4rem;
+  }
+
+  .form-register form label {
+    margin-top: 20px;
+    font-size: 1.4rem;
+  }
+
+  .form-register input {
+    margin-top: 13px;
+  }
+
+  .form-register form input {
+    border-radius: 16px;
+    width: 640px;
+    height: 80px;
+    padding: 13px 85px;
+    font-size: 1.3rem;
+  }
+
+  .input-icon-profile {
+    width: 28px;
+    top: 185px;
+    left: 35px;
+  }
+
+  .input-icon-mail {
+    width: 28px;
+    top: 330px;
+    left: 35px;
+  }
+
+  .input-icon-password {
+    width: 28px;
+    top: 470px;
+    left: 35px;
+  }
+
+  .input-icon-confirm-password {
+    width: 28px;
+    top: 610px;
+    left: 35px;
+  }
+
+  .button-register {
+    margin-top: 20px;
+    width: 640px;
+    height: 80px;
+    padding: 10px 10px;
+    font-size: 1.6rem;
+    border-radius: 10px;
+  }
+
+  .have-account {
+    margin: 20px 0;
+    font-size: 1.4rem;
+    text-shadow: none;
+  }
+
+  .or p {
+    font-size: 1.2rem;
+  }
+
+  .button-account {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .button-account .facebook-account {
+    width: 100px;
+    height: 100px;
+    margin-right: 40px;
+  }
+
+  .button-account .google-account {
+    width: 100px;
+    height: 100px;
+  }
+
+  .button-account .facebook-account span {
+    display: none;
+  }
+
+  .button-account .google-account span {
+    display: none;
+  }
+
+  .button-account .facebook-account .facebook-icon {
+    width: 40px;
+    top: 30px;
+    left: 30px;
+  }
+
+  .button-account .google-account .google-icon {
+    width: 40px;
+    top: 30px;
+    left: 30px;
   }
 }
