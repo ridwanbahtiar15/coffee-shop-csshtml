@@ -214,7 +214,7 @@ form input:focus {
   left: 80px;
 }
 
-/* media 426px */
+/* mobile */
 @media screen and (max-width: 600px) {
   .aside {
     margin: 0;

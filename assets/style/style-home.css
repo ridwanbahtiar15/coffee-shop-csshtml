@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+}
+
+nav {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px 140px;
+  background-color: rgba(11, 9, 9, 0.13);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+}
+
+nav .nav-start {
+  display: flex;
+  align-items: center;
+  gap: 68px;
+}
+
+nav .nav-start a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}
+
+nav .nav-end {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+nav .nav-end a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+
+nav .nav-end .signin {
+  padding: 16px 22px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+nav .nav-end .signup {
+  padding: 16px 22px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #ff8906;
+  border: none;
+  color: #0b132a;
+}
+
+header .row1,
+header .row2 {
+  display: flex;
+}
+
+.header1,
+.header2,
+.header3,
+.header4 {
+  width: 50%;
+}
+
+.header1 img,
+.header2 img,
+.header4 {
+  /* background-size: contain; */
+  max-width: 100%;
+}
+
+.header4 {
+  position: relative;
+  top: -28px;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+}
