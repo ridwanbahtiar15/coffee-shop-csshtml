@@ -9,37 +9,39 @@ body {
 
 .container {
   display: flex;
+  width: 100hv;
+  height: 100hv;
 }
 
-/* .section img {
-  width: 290px;
-} */
-
-.aside {
-  padding: 30px 100px;
+.aside-register {
+  padding: 80px 80px;
 }
 
-.form-register .text-register {
+.aside-login {
+  padding: 120px 80px;
+}
+
+.text-register,
+.text-login {
   margin-top: 51px;
   color: #8e6447;
   font-weight: 600;
   font-size: 1.5rem;
 }
 
-.form-register .text-light {
+.text-light {
   margin-top: 25px 0;
   font-weight: 300;
-  /* margin-top: 30px; */
 }
 
-.form-register form label {
+form label {
   margin-top: 25px;
   display: block;
   color: #0b132a;
   font-weight: 600;
 }
 
-.form-register form input {
+form input {
   margin-top: 13px;
   display: block;
   box-sizing: border-box;
@@ -53,39 +55,71 @@ body {
   outline: none;
 }
 
-.form-register form input:focus {
+form input:focus {
   border: 2px solid #0b132a;
 }
 
-.form-register {
+.form-register,
+.form-login {
   position: relative;
 }
 
-.input-icon-profile {
+.form-register .input-icon-profile {
   position: absolute;
   top: 150px;
   left: 20px;
 }
 
-.input-icon-mail {
+.form-register .input-icon-mail {
   position: absolute;
   top: 260px;
   left: 20px;
 }
 
-.input-icon-password {
+.form-login .input-icon-mail {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+}
+
+.form-register .input-icon-password {
   position: absolute;
   top: 370px;
   left: 20px;
 }
 
-.input-icon-confirm-password {
+.form-register .input-icon-eyeslash1 {
+  position: absolute;
+  top: 370px;
+  right: 25px;
+}
+
+.form-login .input-icon-password {
+  position: absolute;
+  top: 260px;
+  left: 20px;
+}
+
+.form-login .input-icon-eyeslash {
+  position: absolute;
+  top: 260px;
+  right: 25px;
+}
+
+.form-register .input-icon-confirm-password {
   position: absolute;
   top: 480px;
   left: 20px;
 }
 
-.button-register {
+.form-register .input-icon-eyeslash2 {
+  position: absolute;
+  top: 480px;
+  right: 25px;
+}
+
+.button-register,
+.button-login {
   box-sizing: border-box;
   margin-top: 25px;
   width: 640px;
@@ -104,6 +138,7 @@ body {
   text-align: center;
   text-shadow: 1px 1px 20px;
   color: #4f5665;
+  font-size: 1rem;
 }
 
 .have-account span {
@@ -123,12 +158,12 @@ body {
 
 .or .hr-start {
   position: absolute;
-  top: 5px;
+  top: 3px;
 }
 
 .or .hr-end {
   position: absolute;
-  top: 5px;
+  top: 3px;
   right: 0;
 }
 
@@ -139,6 +174,7 @@ body {
 
 .button-account {
   margin-top: 25px;
+  display: flex;
 }
 
 .button-account button {
@@ -189,19 +225,20 @@ body {
     width: 300px;
   }
 
-  .form-register .text-register {
+  .text-register,
+  .text-login {
     margin-top: 15px;
     color: #8e6447;
     font-weight: 600;
     font-size: 2rem;
   }
 
-  .form-register .text-light {
+  .text-light {
     margin-top: 20px;
     font-size: 1.4rem;
   }
 
-  .form-register form label {
+  form label {
     margin-top: 20px;
     font-size: 1.4rem;
   }
@@ -210,7 +247,7 @@ body {
     margin-top: 13px;
   }
 
-  .form-register form input {
+  form input {
     border-radius: 16px;
     width: 640px;
     height: 80px;
@@ -218,31 +255,55 @@ body {
     font-size: 1.3rem;
   }
 
-  .input-icon-profile {
+  .form-register .input-icon-profile,
+  .form-login .input-icon-mail {
     width: 28px;
     top: 185px;
     left: 35px;
   }
 
-  .input-icon-mail {
+  .form-register .input-icon-mail,
+  .form-login .input-icon-password {
     width: 28px;
     top: 330px;
     left: 35px;
   }
 
-  .input-icon-password {
+  .form-register .input-icon-password {
     width: 28px;
     top: 470px;
     left: 35px;
   }
 
-  .input-icon-confirm-password {
+  .form-register .input-icon-eyeslash1 {
+    width: 28px;
+    position: absolute;
+    top: 470px;
+    right: 25px;
+  }
+
+  .form-login .input-icon-eyeslash {
+    width: 28px;
+    position: absolute;
+    top: 330px;
+    right: 25px;
+  }
+
+  .form-register .input-icon-confirm-password {
     width: 28px;
     top: 610px;
     left: 35px;
   }
 
-  .button-register {
+  .form-register .input-icon-eyeslash2 {
+    width: 28px;
+    position: absolute;
+    top: 610px;
+    right: 25px;
+  }
+
+  .button-register,
+  .button-login {
     margin-top: 20px;
     width: 640px;
     height: 80px;
@@ -264,7 +325,7 @@ body {
   .button-account {
     margin-top: 20px;
     width: 100%;
-    text-align: center;
+    justify-content: center;
   }
 
   .button-account .facebook-account {
