@@ -170,3 +170,10 @@ body {
   top: 12px;
   left: 80px;
 }
+
+/* media 426px */
+@media screen and (max-width: 600px) {
+  .section img {
+    display: none;
+  }
+}
