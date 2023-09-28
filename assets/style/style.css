@@ -21,6 +21,10 @@ body {
   padding: 120px 80px;
 }
 
+.logo {
+  width: 150px;
+}
+
 .text-register,
 .text-login {
   margin-top: 51px;
@@ -221,8 +225,8 @@ form input:focus {
     display: none;
   }
 
-  .aside .logo {
-    width: 300px;
+  .logo {
+    width: 240px;
   }
 
   .text-register,
