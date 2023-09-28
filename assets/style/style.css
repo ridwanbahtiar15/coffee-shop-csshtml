@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1rem;
+  /* font-size: 1rem; */
+}
+
+.container {
+  display: flex;
+}
+
+/* .section img {
+  width: 290px;
+} */
+
+.aside {
+  padding: 30px 100px;
+}
+
+.form-register .text-register {
+  margin-top: 51px;
+  color: #8e6447;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.form-register .text-light {
+  margin-top: 25px 0;
+  font-weight: 300;
+  /* margin-top: 30px; */
+}
+
+.form-register form label {
+  margin-top: 25px;
+  display: block;
+  color: #0b132a;
+  font-weight: 600;
+}
+
+.form-register form input {
+  margin-top: 13px;
+  display: block;
+  background-color: #fcfdfe;
+  box-sizing: border-box;
+  border: 2px solid #dedede;
+  border-radius: 8px;
+  width: 640px;
+  height: 50px;
+  padding: 13px 50px;
+  letter-spacing: 0.75px;
+  font-size: 0.9rem;
+  /* position: relative; */
+}
+
+.form-register {
+  position: relative;
+}
+
+.input-icon-profile {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+}
+
+.input-icon-mail {
+  position: absolute;
+  top: 260px;
+  left: 20px;
+}
+
+.input-icon-password {
+  position: absolute;
+  top: 370px;
+  left: 20px;
+}
+
+.input-icon-confirm-password {
+  position: absolute;
+  top: 480px;
+  left: 20px;
+}
+
+.button-register {
+  box-sizing: border-box;
+  margin-top: 25px;
+  width: 640px;
+  height: 45px;
+  padding: 10px 10px;
+  background-color: #ff8906;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #0b132a;
+}
+
+.have-account {
+  margin-top: 25px;
+  text-align: center;
+  text-shadow: 1px 1px 20px;
+  color: #4f5665;
+}
+
+.have-account span {
+  color: #ff8906;
+}
+
+.or {
+  position: relative;
+  font-size: 12px;
+}
+
+.or hr {
+  color: #dedede;
+  width: 225px;
+  border: 0.5px solid #dedede;
+}
+
+.or .hr-start {
+  position: absolute;
+  top: 5px;
+}
+
+.or .hr-end {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+.or p {
+  color: #aaaaaa;
+  text-align: center;
+}
+
+.button-account {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.button-account button {
+  width: 315px;
+  padding: 15px 10px;
+  border: none;
+  background-color: #fff;
+  border-radius: 16px;
+  color: #4f5665;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.button-account .facebook-account {
+  position: relative;
+}
+
+.button-account .facebook-account .facebook-icon {
+  position: absolute;
+  top: 12px;
+  left: 80px;
+}
+
+.button-account .google-account {
+  position: relative;
+}
+
+.button-account .google-account .google-icon {
+  position: absolute;
+  top: 12px;
+  left: 80px;
+}
