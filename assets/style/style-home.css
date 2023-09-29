@@ -221,7 +221,8 @@ header .row2 {
 
 main .favorite {
   margin-top: 50px;
-  padding: 0 50px;
+  padding: 0 80px 0 50px;
+  margin-bottom: 500px;
 }
 
 main .favorite h1 {
@@ -247,6 +248,76 @@ main .favorite .subtitle {
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
+}
+
+.products {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products1,
+.products2,
+.products3,
+.products4 {
+  position: relative;
+  width: 20%;
+}
+
+.card {
+  /* border: 1px solid black; */
+  width: 240px;
+  padding: 10px 10px 25px 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 200px;
+  left: 10px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card .product-name {
+  font-size: 22px;
+  font-weight: 500;
+  color: #0b132a;
+}
+
+.card .info {
+  font-size: 14px;
+  color: #4f5665;
+}
+
+.card .price {
+  font-size: 22px;
+  font-weight: 500;
+  color: #ff8906;
+}
+
+.card .price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .product-button a {
+  text-decoration: none;
+}
+
+.card .product-button .buy {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0b132a;
+  padding: 8px 76px;
+  background-color: #ff8906;
+  border-radius: 6px;
+}
+
+.card .product-button img {
+  position: relative;
+  padding: 4px 14px;
+  background-color: #fff;
+  border: 1px solid #ff8906;
+  border-radius: 6px;
+  top: 12px;
+  left: 5px;
 }
 
 /* Mobile */
