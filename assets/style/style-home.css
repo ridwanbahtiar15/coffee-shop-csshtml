@@ -219,6 +219,36 @@ header .row2 {
   margin-right: 6px;
 }
 
+main .favorite {
+  margin-top: 50px;
+  padding: 0 50px;
+}
+
+main .favorite h1 {
+  font-weight: 500;
+  font-size: 3rem;
+  color: #0b132a;
+  text-align: center;
+}
+
+main .favorite h1 span {
+  color: #8e6447;
+}
+
+main .favorite hr {
+  width: 5%;
+  height: 6px;
+  background-color: #ff8906;
+  border: none;
+}
+
+main .favorite .subtitle {
+  color: #4f5665;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
 /* Mobile */
 @media screen and (max-width: 600px) {
 }
