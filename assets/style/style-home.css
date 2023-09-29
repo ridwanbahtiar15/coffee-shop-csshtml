@@ -333,6 +333,64 @@ main .subtitle {
   margin-top: 60px;
 }
 
+.testimonial,
+.testimonial img {
+  max-width: 100%;
+}
+
+.info-testimonial {
+  position: relative;
+  display: flex;
+}
+
+.info-testimonial .photo {
+  max-width: 50%;
+  position: absolute;
+  top: -31rem;
+  left: 50px;
+}
+
+.info-testimonial .profile {
+  max-width: 38%;
+  position: absolute;
+  top: -31rem;
+  right: 12rem;
+}
+
+.info-testimonial .profile span {
+  color: #fff;
+}
+
+.info-testimonial .profile h1 {
+  text-align: left;
+  color: #fff;
+  border-left: 6px solid #ff8906;
+  padding-left: 1rem;
+}
+
+.info-testimonial .profile .title-job {
+  color: #ff8906;
+  display: block;
+}
+
+.info-testimonial .profile .comment {
+  color: #fff;
+  display: block;
+  margin-top: 25px;
+}
+
+.info-testimonial .profile .star {
+  margin: 20px 0;
+}
+
+.info-testimonial .profile .arrow-left {
+  margin-right: 10px;
+}
+
+.info-testimonial .profile .paginate {
+  margin-top: 25px;
+}
+
 /* Mobile */
 @media screen and (max-width: 600px) {
 }
