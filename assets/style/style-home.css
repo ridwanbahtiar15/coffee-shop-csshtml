@@ -19,9 +19,11 @@ nav {
   justify-content: space-between;
   position: fixed;
   top: 0;
+  z-index: 99;
 }
 
 nav .nav-start {
+  margin-left: -80px;
   display: flex;
   align-items: center;
   gap: 68px;
@@ -31,9 +33,15 @@ nav .nav-start a {
   text-decoration: none;
   font-size: 14px;
   color: #fff;
+  padding: 8px 0;
+}
+
+.active {
+  border-bottom: 2px solid #ff8906;
 }
 
 nav .nav-end {
+  margin-right: -80px;
   display: flex;
   align-items: center;
   gap: 22px;
@@ -54,7 +62,6 @@ nav .nav-end .signin {
 
 nav .nav-end .signup {
   padding: 16px 22px;
-  border: 1px solid #fff;
   border-radius: 5px;
   background-color: #ff8906;
   border: none;
@@ -75,7 +82,7 @@ header .row2 {
 
 .header1 img,
 .header2 img,
-.header4 {
+.header4 img {
   /* background-size: contain; */
   max-width: 100%;
 }
@@ -83,6 +90,133 @@ header .row2 {
 .header4 {
   position: relative;
   top: -28px;
+}
+
+.header1 {
+  position: relative;
+}
+
+.header1 .info {
+  width: 80%;
+  /* background-color: red; */
+  position: absolute;
+  top: 200px;
+  left: 50px;
+}
+
+.header1 .info h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.header1 .info .text-light {
+  letter-spacing: 1px;
+  color: #fff;
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+
+.main-button {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0b132a;
+  padding: 16px 22px;
+  border-radius: 5px;
+  background-color: #ff8906;
+  border: none;
+}
+
+.header1 .info a {
+  text-decoration: none;
+}
+
+.header1 .info-count {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #fff;
+}
+
+.header1 .info-count span {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #ff8906;
+}
+
+.header1 .info-count p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.header1 .info-count .border-x {
+  text-align: center;
+  width: 30%;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+.header1 .info-count .border-x p {
+  margin-left: -50px;
+}
+
+.header2 {
+  position: relative;
+}
+
+.header2 span {
+  position: absolute;
+  background-color: #ff8906;
+  padding: 16px;
+  border-radius: 100%;
+  bottom: 90px;
+  right: 120px;
+}
+
+.header3 .info {
+  width: 80%;
+  padding: 0 50px;
+}
+
+.header3 .info h1 {
+  padding: 0 30px;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0b132a;
+}
+
+.header3 .info h1 span {
+  color: #8e6447;
+}
+
+.header3 {
+  position: relative;
+}
+
+.header3 .info .line {
+  position: absolute;
+  width: 7px;
+  height: 70px;
+  background-color: #ff8906;
+  top: 85px;
+}
+
+.header3 .info .text-light {
+  margin-top: 25px;
+  color: #4f5665;
+}
+
+.header3 .info .check p {
+  font-size: 14px;
+  color: #4f5665;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header3 .info .check p img {
+  margin-right: 6px;
 }
 
 /* Mobile */
