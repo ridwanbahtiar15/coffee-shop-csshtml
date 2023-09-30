@@ -772,6 +772,10 @@ footer {
     max-width: 100%;
   }
 
+  .nav-end .burger-menu {
+    display: block;
+  }
+
   /* .info-testimonial .photo {
     top: 0rem;
   } */
