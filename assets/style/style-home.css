@@ -354,7 +354,7 @@ main .subtitle {
 }
 
 .info-testimonial .profile {
-  max-width: 100%;
+  max-width: 38%;
   position: absolute;
   top: -31rem;
   right: 12rem;
@@ -453,6 +453,10 @@ footer {
 
 .icon-social-media img {
   margin-right: -16px;
+}
+
+.nav-end .burger-menu {
+  display: none;
 }
 
 /* Mobile */
@@ -716,11 +720,6 @@ footer {
 
   .info-testimonial .profile {
     max-width: 100%;
-    top: -20rem;
-    left: 10rem;
-  }
-
-  .info-testimonial .profile {
     width: 90%;
     padding: 20px;
     position: absolute;
