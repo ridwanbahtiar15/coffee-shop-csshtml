@@ -668,13 +668,13 @@ footer {
     gap: 20px;
   }
 
-  footer {
+  /* footer {
     display: none;
-  }
+  } */
 
-  .row2 {
+  /* .row2 {
     display: none;
-  }
+  } */
 
   .map {
     margin-top: 12rem;
@@ -716,10 +716,8 @@ footer {
 
   .info-testimonial .profile {
     max-width: 100%;
-    /* padding: 20px; */
     top: -20rem;
     left: 10rem;
-    /* background-color: red; */
   }
 
   .info-testimonial .profile {
@@ -748,6 +746,31 @@ footer {
   .profile .arrow {
     display: block;
     margin-bottom: 3rem;
+  }
+
+  footer {
+    max-width: 100%;
+    padding: 6rem 20px 8rem 20px;
+    flex-wrap: wrap;
+    gap: 2rem 5rem;
+  }
+
+  .about {
+    max-width: 100%;
+    margin-bottom: -3rem;
+  }
+
+  .about .copyright {
+    position: relative;
+    top: 30rem;
+  }
+
+  .list-product {
+    max-width: 100%;
+  }
+
+  .list-engage {
+    max-width: 100%;
   }
 
   /* .info-testimonial .photo {
