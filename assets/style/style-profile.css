@@ -69,6 +69,10 @@ nav .nav-end .signup {
   color: #0b132a;
 }
 
+.burger-menu {
+  display: none;
+}
+
 .main .title {
   font-size: 3rem;
   color: #0b0909;
@@ -76,15 +80,18 @@ nav .nav-end .signup {
 
 .profile {
   width: 100%;
+  display: flex;
 }
 
-.profile .profile-image {
-  width: 20%;
+.profile-image {
+  width: 26%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   border: 2px solid #e8e8e8;
   padding: 22px;
   text-align: center;
+  margin-right: 1.5rem;
 }
 
 .profile .profile-image .name {
@@ -121,4 +128,162 @@ nav .nav-end .signup {
 
 .profile .since .date {
   font-weight: 600;
+}
+
+.profile .profile-user {
+  width: 100%;
+  border: 2px solid #e8e8e8;
+}
+
+/* form profile */
+
+.profile form {
+  padding: 22px 3rem 3rem 3rem;
+  position: relative;
+}
+
+form label {
+  margin-top: 25px;
+  display: block;
+  color: #0b132a;
+  font-weight: 600;
+}
+
+form input {
+  margin-top: 13px;
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid #dedede;
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+  padding: 13px 50px;
+  letter-spacing: 0.75px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+form input:focus {
+  border: 2px solid #0b132a;
+}
+
+.input-icon-profile {
+  position: absolute;
+  top: 6rem;
+  left: 4.5rem;
+}
+
+.input-icon-mail {
+  position: absolute;
+  top: 13rem;
+  left: 4.5rem;
+}
+
+.input-icon-phone {
+  position: absolute;
+  top: 19.8rem;
+  left: 4.5rem;
+}
+
+.input-icon-password {
+  position: absolute;
+  top: 26.6rem;
+  left: 4.5rem;
+}
+
+.input-icon-eyeslash {
+  position: absolute;
+  top: 26.6rem;
+  right: 4.5rem;
+  /* right: 25px; */
+}
+
+.set-password {
+  color: #ff8906;
+  position: absolute;
+  top: 23.4rem;
+  right: 3rem;
+}
+
+.input-icon-address {
+  position: absolute;
+  top: 33.3rem;
+  left: 4.5rem;
+}
+
+.button-submit {
+  box-sizing: border-box;
+  margin-top: 25px;
+  width: 100%;
+  height: 52px;
+  background-color: #ff8906;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #0b132a;
+}
+
+/* footer */
+footer {
+  margin-top: 3rem;
+  max-width: 100%;
+  gap: 25px;
+  padding: 3rem 4rem 3rem 4rem;
+  /* padding: 50px; */
+  display: flex;
+  gap: 40px;
+  background-color: #f8f8f8;
+}
+
+.about {
+  max-width: 30%;
+  align-self: flex-end;
+}
+
+.about p {
+  color: #4f5665;
+  line-height: 30px;
+  paragraph-spacing: 5px;
+}
+
+.about .copyright {
+  font-family: "Rubik";
+  color: #afb5c0;
+}
+
+.list-products p:nth-child(1) {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0b132a;
+}
+
+.list-engage p:nth-child(1) {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0b132a;
+}
+
+.list-products p,
+.list-engage p {
+  color: #4f5665;
+}
+
+.social-media {
+  width: 30%;
+}
+
+.social-media p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0b132a;
+}
+
+.icon-social-media {
+  display: flex;
+  margin-left: -20px;
+}
+
+.icon-social-media img {
+  margin-right: -16px;
 }
