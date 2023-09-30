@@ -225,6 +225,12 @@ form input:focus {
     padding: 80px 2rem;
   }
 
+  .aside-register {
+    width: 100%;
+    margin: 0;
+    padding: 4rem 2rem;
+  }
+
   .section img {
     display: none;
   }
@@ -269,19 +275,19 @@ form input:focus {
 
   .form-register .input-icon-mail,
   .form-login .input-icon-password {
-    top: 14.5rem;
+    top: 14.3rem;
     left: 1.4rem;
   }
 
   .form-register .input-icon-password {
-    top: 470px;
-    left: 35px;
+    top: 20.7rem;
+    left: 1.4rem;
   }
 
   .form-register .input-icon-eyeslash1 {
     position: absolute;
-    top: 470px;
-    right: 25px;
+    top: 20.7rem;
+    right: 1.4rem;
   }
 
   .form-login .input-icon-eyeslash {
@@ -291,14 +297,14 @@ form input:focus {
   }
 
   .form-register .input-icon-confirm-password {
-    top: 610px;
-    left: 35px;
+    top: 27rem;
+    left: 1.4rem;
   }
 
   .form-register .input-icon-eyeslash2 {
     position: absolute;
-    top: 610px;
-    right: 25px;
+    top: 27rem;
+    right: 1.4rem;
   }
 
   .button-register,
