@@ -7,14 +7,14 @@ body {
 }
 
 .container {
-  padding: 8rem 4rem 5rem 4rem;
+  padding: 8rem 4rem 2rem 4rem;
   max-width: 100%;
 }
 
 nav {
   box-sizing: border-box;
   width: 100%;
-  padding: 16px 140px;
+  padding: 1rem 4rem;
   background-color: #0b0909;
   display: flex;
   justify-content: space-between;
@@ -24,7 +24,7 @@ nav {
 }
 
 nav .nav-start {
-  margin-left: -80px;
+  /* margin-left: -80px; */
   display: flex;
   align-items: center;
   gap: 68px;
@@ -35,6 +35,7 @@ nav .nav-start a {
   font-size: 14px;
   color: #fff;
   padding: 8px 0;
+  padding: ;
 }
 
 .active {
@@ -42,7 +43,7 @@ nav .nav-start a {
 }
 
 nav .nav-end {
-  margin-right: -80px;
+  /* margin-right: -80px; */
   display: flex;
   align-items: center;
   gap: 22px;
@@ -94,24 +95,24 @@ nav .nav-end .signup {
   margin-right: 1.5rem;
 }
 
-.profile .profile-image .name {
+.profile-image .name {
   font-size: 22px;
   font-weight: 500;
   color: #0b132a;
 }
 
-.profile .profile-image .email {
+.profile-image .email {
   margin-top: 6px;
   color: #0b132a;
 }
 
-.profile .profile-image img {
+.profile-image img {
   margin: 1rem 0;
   border-radius: 100%;
   width: 120px;
 }
 
-.profile .upload-photo {
+.upload-photo {
   font-size: 14px;
   font-weight: 500;
   color: #0b132a;
@@ -121,23 +122,23 @@ nav .nav-end .signup {
   border-radius: 5px;
 }
 
-.profile .since {
+.since {
   margin-top: 1rem;
   color: #4f5665;
 }
 
-.profile .since .date {
+.since .date {
   font-weight: 600;
 }
 
-.profile .profile-user {
+.profile-user {
   width: 100%;
   border: 2px solid #e8e8e8;
 }
 
 /* form profile */
 
-.profile form {
+form {
   padding: 22px 3rem 3rem 3rem;
   position: relative;
 }
@@ -286,4 +287,142 @@ footer {
 
 .icon-social-media img {
   margin-right: -16px;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  nav {
+    /* width: 100%; */
+    /* max-width: 100%; */
+  }
+
+  nav {
+    padding: 1rem 2rem;
+  }
+
+  .nav-end a:nth-child(2) img,
+  .nav-end a:nth-child(5) img {
+    width: 2rem;
+  }
+
+  .nav-start a:nth-child(2),
+  .nav-start a:nth-child(3),
+  .nav-end a:nth-child(1),
+  .nav-end a:nth-child(3),
+  .nav-end a:nth-child(4) {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .container {
+    padding: 6rem 2rem;
+  }
+
+  .profile {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .profile-image {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .main .title {
+    font-size: 2rem;
+  }
+
+  .profile-image .name {
+    font-size: 18px;
+  }
+
+  .profile-image .email {
+    font-size: 14px;
+  }
+
+  .profile-user form {
+    padding: 1.2rem 12px 1rem 12px;
+  }
+
+  form label:nth-child(1) {
+    margin-top: 0;
+  }
+
+  form label {
+    font-size: 14px;
+  }
+
+  form input {
+    font-size: 12px;
+    letter-spacing: 0.75px;
+  }
+
+  .input-icon-profile {
+    top: 4rem;
+    left: 2rem;
+  }
+
+  .input-icon-mail {
+    top: 10.8rem;
+    left: 2rem;
+  }
+
+  .input-icon-phone {
+    top: 17.5rem;
+    left: 2rem;
+  }
+
+  .input-icon-password {
+    top: 24rem;
+    left: 2rem;
+  }
+
+  .input-icon-eyeslash {
+    top: 24rem;
+    right: 2rem;
+  }
+
+  .set-password {
+    font-size: 14px;
+    top: 21.2rem;
+    right: 1rem;
+  }
+
+  .input-icon-address {
+    top: 30.5rem;
+    left: 2rem;
+  }
+
+  .button-submit {
+    font-size: 14px;
+  }
+
+  footer {
+    max-width: 100%;
+    margin-top: -3rem;
+    padding: 6rem 2rem 8rem 2rem;
+    flex-wrap: wrap;
+    gap: 2rem 5rem;
+  }
+
+  .about {
+    max-width: 100%;
+    margin-bottom: -3rem;
+  }
+
+  .about .copyright {
+    position: relative;
+    top: 30rem;
+  }
+
+  .list-product {
+    max-width: 100%;
+  }
+
+  .list-engage {
+    max-width: 100%;
+  }
 }
