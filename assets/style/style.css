@@ -9,8 +9,11 @@ body {
 
 .container {
   display: flex;
-  width: 100hv;
-  height: 100hv;
+  width: 100%;
+}
+
+.section img {
+  max-width: 100%;
 }
 
 .aside-register {
@@ -51,7 +54,7 @@ form input {
   box-sizing: border-box;
   border: 2px solid #dedede;
   border-radius: 8px;
-  width: 640px;
+  width: 100%;
   height: 50px;
   padding: 13px 50px;
   letter-spacing: 0.75px;
@@ -216,9 +219,10 @@ form input:focus {
 
 /* mobile */
 @media screen and (max-width: 600px) {
-  .aside {
+  .aside-login {
+    width: 100%;
     margin: 0;
-    padding: 80px 40px;
+    padding: 80px 2rem;
   }
 
   .section img {
@@ -226,7 +230,7 @@ form input:focus {
   }
 
   .logo {
-    width: 240px;
+    width: 160px;
   }
 
   .text-register,
@@ -234,17 +238,17 @@ form input:focus {
     margin-top: 15px;
     color: #8e6447;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 18px;
   }
 
   .text-light {
     margin-top: 20px;
-    font-size: 1.4rem;
+    font-size: 14px;
   }
 
   form label {
     margin-top: 20px;
-    font-size: 1.4rem;
+    font-size: 14px;
   }
 
   .form-register input {
@@ -252,55 +256,46 @@ form input:focus {
   }
 
   form input {
-    border-radius: 16px;
-    width: 640px;
-    height: 80px;
-    padding: 13px 85px;
-    font-size: 1.3rem;
+    border-radius: 8px;
+    padding: 13px 50px;
+    font-size: 12px;
   }
 
   .form-register .input-icon-profile,
   .form-login .input-icon-mail {
-    width: 28px;
-    top: 190px;
-    left: 35px;
+    top: 8rem;
+    left: 1.4rem;
   }
 
   .form-register .input-icon-mail,
   .form-login .input-icon-password {
-    width: 28px;
-    top: 330px;
-    left: 35px;
+    top: 14.5rem;
+    left: 1.4rem;
   }
 
   .form-register .input-icon-password {
-    width: 28px;
     top: 470px;
     left: 35px;
   }
 
   .form-register .input-icon-eyeslash1 {
-    width: 28px;
     position: absolute;
     top: 470px;
     right: 25px;
   }
 
   .form-login .input-icon-eyeslash {
-    width: 28px;
     position: absolute;
-    top: 330px;
-    right: 25px;
+    top: 14.5rem;
+    right: 1.4rem;
   }
 
   .form-register .input-icon-confirm-password {
-    width: 28px;
     top: 610px;
     left: 35px;
   }
 
   .form-register .input-icon-eyeslash2 {
-    width: 28px;
     position: absolute;
     top: 610px;
     right: 25px;
@@ -309,21 +304,26 @@ form input:focus {
   .button-register,
   .button-login {
     margin-top: 20px;
-    width: 640px;
-    height: 80px;
+    width: 100%;
+    height: 50px;
     padding: 10px 10px;
-    font-size: 1.6rem;
+    font-size: 1rem;
     border-radius: 10px;
   }
 
   .have-account {
     margin: 20px 0;
-    font-size: 1.4rem;
+    font-size: 14px;
     text-shadow: none;
   }
 
   .or p {
-    font-size: 1.2rem;
+    font-size: 12px;
+  }
+
+  .or .hr-start,
+  .or .hr-end {
+    width: 10rem;
   }
 
   .button-account {
@@ -334,14 +334,14 @@ form input:focus {
 
   .button-account .facebook-account {
     order: 2;
-    width: 100px;
-    height: 100px;
+    width: 5rem;
+    height: 5rem;
   }
 
   .button-account .google-account {
     order: 1;
-    width: 100px;
-    height: 100px;
+    width: 5rem;
+    height: 5rem;
     margin-right: 40px;
   }
 
@@ -354,13 +354,11 @@ form input:focus {
   }
 
   .button-account .facebook-account .facebook-icon {
-    width: 40px;
     top: 30px;
     left: 30px;
   }
 
   .button-account .google-account .google-icon {
-    width: 40px;
     top: 30px;
     left: 30px;
   }
