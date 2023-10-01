@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style/style-product.css" />
+    <title>Product</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-start">
+        <a href="#"><img src="assets/img/coffee-shop-logo1.png" alt="" /></a>
+        <a href="#">Home</a>
+        <a href="#" class="active">Product</a>
+      </div>
+      <div class="nav-end">
+        <a href="#"><img src="assets/img/Search.png" alt="" /></a>
+        <a href="#"><img src="assets/img/ShoppingCart.png" alt="" /></a>
+        <a href="#" class="signin">SignIn</a>
+        <a href="#" class="signup">Sign Up</a>
+        <a href="#" class="burger-menu"
+          ><img src="assets/img/burger-menu.png" alt="burger-menu"
+        /></a>
+      </div>
+    </nav>
+    <header>
+      <div class="hero">
+        <img src="assets/img/Rectangle299.png" alt="hero" />
+        <span>We Provide Good Coffee and Healthy Meals</span>
+      </div>
+    </header>
+
+    <div class="promo">
+      <div class="promo-top">
+        <span class="title">Today <span>Promo</span></span>
+        <div class="arrow">
+          <div id="arrow-left">
+            <img
+              src="assets/img/Group1305.png"
+              alt="arrow-left"
+              class="arrow-left"
+            />
+          </div>
+          <div id="arrow-right">
+            <img
+              src="assets/img/Group1304.png"
+              alt="arrow-right"
+              class="arrow-right"
+              id="arrow-right"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="promo-center">
+        <div class="promo-card">
+          <img src="assets/img/Group1712.png" alt="" />
+          <img src="assets/img/Group1712.png" alt="" />
+          <img src="assets/img/Group1712.png" alt="" />
+          <img src="assets/img/Frame1000002588.png" alt="" />
+          <img src="assets/img/Frame1000002588.png" alt="" />
+          <img src="assets/img/Group1712.png" alt="" />
+        </div>
+      </div>
+      <div class="promo-bottom">
+        <img src="assets/img/Group1300.png" alt="scroll" />
+      </div>
+    </div>
+    <div class="container">
+      <span class="title">Our <span>Product</span></span>
+      <div class="our-product">
+        <main>
+          <div class="filter">
+            <span>Filter</span>
+            <span>Reset Filter</span>
+          </div>
+          <div class="search">
+            <span>Search</span>
+            <input type="text" placeholder="Search Your Product" />
+          </div>
+          <div class="category">
+            <span>Category</span>
+            <div class="checkbox">
+              <div class="favorite-product">
+                <input type="checkbox" id="favorite-product" checked />
+                <label for="favorite-product">Favorite Product</label>
+              </div>
+              <div class="coffee">
+                <input type="checkbox" id="coffee" />
+                <label for="coffee">Coffee</label>
+              </div>
+              <div class="non-coffee">
+                <input type="checkbox" id="non-coffee" />
+                <label for="non-coffee">Non Coffee</label>
+              </div>
+              <div class="foods">
+                <input type="checkbox" id="foods" />
+                <label for="foods">Foods</label>
+              </div>
+              <div class="add-on">
+                <input type="checkbox" id="add-on" />
+                <label for="add-on">Add-On</label>
+              </div>
+            </div>
+          </div>
+        </main>
+        <aside></aside>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let scrollCard = document.querySelector(".promo-card");
+    let arrowLeft = document.getElementById("arrow-left");
+    let arrowRight = document.getElementById("arrow-right");
+
+    scrollCard.addEventListener("wheel", (evt) => {
+      evt.preventDefault();
+      scrollCard.scrollLeft += evt.deltaY;
+    });
+
+    arrowRight.addEventListener("click", () => {
+      scrollCard.style.scrollBehavior = "smooth";
+      scrollCard.scrollLeft += 900;
+    });
+
+    arrowLeft.addEventListener("click", () => {
+      scrollCard.style.scrollBehavior = "smooth";
+      scrollCard.scrollLeft -= 900;
+    });
+  </script>
+</html>
