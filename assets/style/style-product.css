@@ -148,6 +148,7 @@ nav .nav-end .signup {
 
 main {
   width: 30%;
+  height: 100%;
   padding: 1.4rem;
   background-color: #0b0909;
   color: #fff;
@@ -243,6 +244,10 @@ main {
 
 aside {
   width: 70%;
+}
+
+.products {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 0.5fr);
   column-gap: 2rem;
@@ -260,11 +265,11 @@ aside {
 .product .card {
   padding: 10px;
   position: absolute;
-  max-width: 80%;
+  width: 85%;
   max-height: 100%;
   background-color: #fff;
   top: 19.5rem;
-  left: 2rem;
+  left: 1.2rem;
 }
 
 .card span {
@@ -327,4 +332,76 @@ aside {
   padding: 6px 12px;
   border: 1px solid #ff8906;
   border-radius: 6px;
+}
+
+.paginate {
+  display: relative;
+  margin-top: 14rem;
+  margin-bottom: 0rem;
+  text-align: center;
+  /* bottom: 0; */
+}
+
+/* footer */
+footer {
+  margin-top: 3rem;
+  max-width: 100%;
+  gap: 25px;
+  padding: 3rem 4rem 3rem 4rem;
+  /* padding: 50px; */
+  display: flex;
+  gap: 40px;
+  background-color: #f8f8f8;
+}
+
+.about {
+  max-width: 30%;
+  align-self: flex-end;
+}
+
+.about p {
+  color: #4f5665;
+  line-height: 30px;
+  paragraph-spacing: 5px;
+}
+
+.about .copyright {
+  font-family: "Rubik";
+  color: #afb5c0;
+}
+
+.list-products p:nth-child(1) {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0b132a;
+}
+
+.list-engage p:nth-child(1) {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0b132a;
+}
+
+.list-products p,
+.list-engage p {
+  color: #4f5665;
+}
+
+.social-media {
+  width: 30%;
+}
+
+.social-media p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0b132a;
+}
+
+.icon-social-media {
+  display: flex;
+  margin-left: -20px;
+}
+
+.icon-social-media img {
+  margin-right: -16px;
 }
