@@ -107,15 +107,14 @@ nav .nav-end .signup {
 
 .promo-top {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  /* margin-bottom: 2rem; */
   padding: 4rem 4rem 2rem 4rem;
   max-width: 100%;
 }
 
 .arrow {
   display: flex;
+  gap: 12px;
 }
 
 .promo-card {
@@ -310,12 +309,13 @@ aside {
 
 .product-button {
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 .product-button a:nth-child(1) {
   width: 70%;
-  padding: 12px;
+  padding: 12px 1rem;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -329,7 +329,7 @@ aside {
 
 .product-button a:nth-child(2) {
   /* width: 30%; */
-  padding: 6px 12px;
+  padding: 6px 24px;
   border: 1px solid #ff8906;
   border-radius: 6px;
 }
