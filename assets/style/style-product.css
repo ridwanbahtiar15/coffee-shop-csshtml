@@ -105,6 +105,10 @@ nav .nav-end .signup {
   color: #8e6447;
 }
 
+.find-product {
+  display: none;
+}
+
 .promo-top {
   display: flex;
   justify-content: space-between;
@@ -404,4 +408,161 @@ footer {
 
 .icon-social-media img {
   margin-right: -16px;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 1rem 2rem;
+  }
+
+  .nav-end a:nth-child(2) img,
+  .nav-end a:nth-child(5) img {
+    width: 2rem;
+  }
+
+  .nav-start a:nth-child(2),
+  .nav-start a:nth-child(3),
+  .nav-end a:nth-child(1),
+  .nav-end a:nth-child(3),
+  .nav-end a:nth-child(4) {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  header {
+    display: none;
+  }
+
+  .find-product {
+    max-width: 100%;
+    margin-top: 5rem;
+    padding: 10px 2rem 8px 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #dedede;
+  }
+
+  .find-product input {
+    width: 58%;
+    font-size: 12px;
+    letter-spacing: 0.75px;
+    padding: 14px 3rem;
+    border: 2px solid #dedede;
+    border-radius: 6px;
+    outline: none;
+  }
+
+  .icon-search {
+    position: absolute;
+    top: 6.5rem;
+    left: 3rem;
+  }
+
+  .promo {
+    max-width: 100%;
+  }
+
+  .promo-top {
+    max-width: 100%;
+    padding: 2rem;
+  }
+
+  .promo-top span {
+    font-size: 24px;
+  }
+
+  .promo-bottom {
+    margin-top: 2rem;
+    padding-left: 2rem;
+    max-width: 100%;
+  }
+
+  .promo-top .arrow {
+    display: none;
+  }
+
+  main {
+    display: none;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .products {
+    row-gap: 21rem;
+  }
+
+  .product .card {
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    max-height: 100%;
+    background-color: #fff;
+    top: 11rem;
+    left: 0;
+  }
+
+  .price {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .price span:nth-child(1) {
+    display: none;
+  }
+
+  .product-button {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .product-button a:nth-child(1) {
+    width: inherit;
+  }
+
+  .product-button a:nth-child(2) img {
+    width: inherit;
+    padding: 0px 3rem;
+    /* texxt-align: center; */
+  }
+
+  .paginate {
+    margin-top: 23em;
+  }
+
+  footer {
+    max-width: 100%;
+    margin-top: 3rem;
+    padding: 4rem 2rem 8rem 2rem;
+    flex-wrap: wrap;
+    gap: 2rem 5rem;
+  }
+
+  .about {
+    max-width: 100%;
+    margin-bottom: -3rem;
+  }
+
+  .about .copyright {
+    position: relative;
+    top: 30rem;
+  }
+
+  .list-product {
+    max-width: 100%;
+  }
+
+  .list-engage {
+    max-width: 100%;
+  }
 }
