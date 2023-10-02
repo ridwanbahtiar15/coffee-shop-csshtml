@@ -123,7 +123,6 @@ nav .nav-end .signup {
 
 .promo-card {
   width: 100%;
-  /* display: relative; */
   display: flex;
   overflow-x: auto;
 }
@@ -155,7 +154,6 @@ main {
   padding: 1.4rem;
   background-color: #0b0909;
   color: #fff;
-  /* margin-top: 2rem; */
   display: flex;
   flex-direction: column;
   border-radius: 1rem;
@@ -218,6 +216,50 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.favorite-product,
+.coffee,
+.non-coffee,
+.foods,
+.add-on,
+.buy-one-get-one,
+.flashsale,
+.birthday-package,
+.cheap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background-color: none;
+  border: 1px solid #a0a3bd;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="checkbox"]:after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00c";
+  font-weight: 900;
+  font-size: 1rem;
+  color: #0b0909;
+  display: none;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #ff8906;
+  border: none;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
 }
 
 .range-price {
